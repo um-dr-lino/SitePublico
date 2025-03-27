@@ -1,0 +1,110 @@
+
+:root{
+  --word-color: #333333;
+  --word-color2: #ffffff;
+  --word-color3: black;
+  --backgroud-bottom: #fff;
+  --hover-color: rgba(0, 150, 255, 0.5)/*#134a85;*/
+  --backgroud-color: #4f4d4a;
+  --light-gray: #F7F7F7;
+  --transparent: rgba(255, 255, 255, 0.7); /* 50% de transparência */
+}
+
+body {
+    background-image: url(/_images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--word-color);
+}
+
+a:hover{
+  color: var(--word-color2);
+  font-weight: bold;
+  color: var(--light-gray);
+}
+
+#menu li {
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--word-color);
+    background-color: var(--backgroud-bottom);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#menu li:hover {
+  cursor: pointer;
+  background-color: var(--hover-color); /* Use uma cor de fundo sólida */
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  font-weight: bold;
+  color: var(--light-gray);
+}
+
+p{
+  font-family: "Rubik", sans-serif;
+  text-align: justify;
+  margin: 30px;
+  padding: auto;
+  padding-bottom: 30px;
+}
+
+.aside-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+  text-align: center;
+  background-color: var(--transparent);
+  border: 1px solid #000;
+  width: 500px;
+  border-radius: 20px;
+  color: var(--word-color3);
+}
+
+.aside-content:hover{
+  background-color: var(--hover-color); /* Use uma cor de fundo sólida */
+  transition: background-color 0.5s ease-in-out, color 0.10s ease-in-out;
+}
+
+h2{
+  margin-top: 40px;
+  padding-top: 1px;
+}
+
+.github-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.linkedin-image {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
